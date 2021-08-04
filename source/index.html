@@ -7,7 +7,7 @@
 </head>
 
 <body class="page">
-  <header class="header">
+  <header class="page__header header">
     <div class="header__logo-wrapper">
       <img class="header__logo" src="img/logo_icons/pink-header-logo.svg" width="74" height="23" alt="Логотип PINK">
     </div>
@@ -17,16 +17,16 @@
     </div>
 
     <ul class="header__nav-list">
-      <li class="header__nav-item">главная</li>
-      <li class="header__nav-item">фотографии</li>
-      <li class="header__nav-item">конкурс</li>
-      <li class="header__nav-item">html academy</li>
+      <li class="header__nav-item"><a>главная</a></li>
+      <li class="header__nav-item"><a>фотографии</a></li>
+      <li class="header__nav-item"><a>конкурс</a></li>
+      <li class="header__nav-item"><a>html academy</a></li>
     </ul>
   </header>
 
   <main class="page-content">
-    <section class="page-content__welcome-section">
-      <h1 class="page-content__title">Мобильное приложение PINK</h1>
+    <h1 class="page-content__title">Мобильное приложение PINK</h1>
+    <section class="page-content__welcome-section welcome-section">
 
       <p class="welcome-section__slogan">
         Взгляните на жизнь<br>иначе!
@@ -73,8 +73,8 @@
       </p>
     </section>
 
-    <section class="page-content__advantages-section">
-      <h2>Преймущества</h2>
+    <section class="page-content__advantages-section advantages-section">
+      <h2 class="visually-hidden">Преймущества</h2>
       <p class="advantages-section__qestion-paragraph">
         Устали от серости мегаполиса?
         Нам есть, что вам
@@ -114,7 +114,7 @@
         </li>
       </ul>
 
-      <div class="advantages-section__about-research">
+      <div class="advantages-section__about-research about-research">
         <div class="about-research__image-wrapper">
           <img src="img/elements/timer.svg" width="298" height="345" alt="">
           <img src="img/elements/diagram-fill.svg" width="252" height="252" alt="">
@@ -128,8 +128,8 @@
       </div>
     </section>
 
-    <section class="page-content__review-section">
-      <h2>Отзывы</h2>
+    <section class="page-content__review-section review-section">
+      <h2 class="visually-hidden">Отзывы</h2>
       <div class="review-section__text-wrapper">
         <p class="review-section__text">
           «Это приложение перевернуло мой мир и позволило по-новому взглянуть на привычные серые вещи! А еще я
@@ -137,13 +137,13 @@
         </p>
       </div>
       <div class="review-section__name-wrapper">
-        <p class="review-section__man-name">Николай Петров</p>
-        <p class="review-section__man-description">25 лет, водитель трамвая</p>
+        <p class="review-section__rewiewer-name">Николай Петров</p>
+        <p class="review-section__rewiewer-info">25 лет, водитель трамвая</p>
       </div>
     </section>
 
-    <section class="page-content__price-section">
-      <h2>Прайс-лист</h2>
+    <section class="page-content__price-section price-section">
+      <h2 class="visually-hidden">Прайс-лист</h2>
       <table class="price-setion__price-table">
         <tr>
           <td></td>
@@ -235,7 +235,7 @@
       </table>
     </section>
 
-    <section class="page-content__contact-us-section">
+    <section class="page-content__contact-us-section contact-us-section">
       <h2 class="contact-us-section__title">Остались вопросы?<br>
         Свяжитесь с нами!</h2>
       <div class="contact-us-section__contact-information-wrapper">
@@ -255,31 +255,39 @@
       </div>
     </section>
 
-    <section class="page-content__map-section">
+    <section class="page-content__map-section map-section">
       <iframe
         src="https://www.google.com/maps/embed?pb=!1m14!1m12!1m3!1d9115.577295444176!2d37.683439337987295!3d55.75335607857729!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!5e0!3m2!1sru!2sru!4v1627296205451!5m2!1sru!2sru"
         width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy"></iframe>
     </section>
   </main>
 
-  <footer class="footer">
+  <footer class="page-footer footer">
     <div class="footer__logo-wrapper">
       <img src="img/logo_icons/pink-full-logo.svg" width="145" height="40" alt="Логотип PINK">
     </div>
     <div class="footer__social-links-wrapper">
       <div class="social-link-border">
-        <img src="img/logo_icons/twitter.svg" width="18" height="14" alt="Логотип Twitter">
+        <a href="https://twitter.com">
+          <img src="img/logo_icons/twitter.svg" width="18" height="14" alt="Логотип Twitter">
+        </a>
       </div>
       <div class="social-link-border">
-        <img src="img/logo_icons/facebook.svg" width="9" height="18" alt="Логотип Facebook">
+        <a href="https://www.facebook.com">
+          <img src="img/logo_icons/facebook.svg" width="9" height="18" alt="Логотип Facebook">
+        </a>
       </div>
       <div class="social-link-border">
-        <img src="img/logo_icons/youtube.svg" width="15" height="13" alt="Логотип Youtube">
+        <a href="https://www.facebook.com">
+          <img src="img/logo_icons/youtube.svg" width="15" height="13" alt="Логотип Youtube">
+        </a>
       </div>
     </div>
     <div class="footer__developer-wrapper">
       <p>Разработано</p>
-      <img src="img/logo_icons/html_academy.svg" width="27" height="34" alt="Логотип HTML Academy">
+      <a href="">
+        <img src="img/logo_icons/html_academy.svg" width="27" height="34" alt="Логотип HTML Academy">
+      </a>
     </div>
   </footer>
 </body>
