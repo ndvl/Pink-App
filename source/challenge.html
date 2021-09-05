@@ -1,0 +1,201 @@
+<!DOCTYPE html>
+<html lang="ru" class="document">
+
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width,initial-scale=1,maximum-scale=1,user-scalable=no" />
+  <title>Конкурс на самое безбашенное путешествие с Пинк</title>
+  <link rel="stylesheet" href="css/style.css">
+</head>
+
+<body class="page">
+
+  <header class="page__header header">
+
+    <div class="header__logo-wrapper">
+      <picture>
+        <source media="(min-width: 1200px)" srcset="img/logo_icons/pink-full-logo-desktop.svg">
+        <source media="(min-width: 660px)" srcset="img/logo_icons/pink-full-logo-tablet.svg">
+        <img src="img/logo_icons/pink-header-logo-mobile.svg" alt="Приложение Pink">
+      </picture>
+    </div>
+
+    <div class="header__nav-button nav-button">
+      <div class="nav-button__line"></div>
+      <div class="nav-button__line"></div>
+      <div class="nav-button__line"></div>
+    </div>
+
+    <nav class="header__nav-wrapper">
+      <ul class="header__nav-list">
+        <li class="header__nav-item"><a href="/index.html">главная</a></li>
+        <li class="header__nav-item"><a href="/catalog.html">фотографии</a></li>
+        <li class="header__nav-item"><a>конкурс</a></li>
+        <li class="header__nav-item"><a href="https://htmlacademy.ru/" target="_blank">HTML academy</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <main class="page-content challenge">
+    <section class="page-content__main-title-section main-title-section">
+      <div class="main-title-section__main-title-wrapper">
+        <h1 class="main-title-section__main-title">Конкурс на самое<br>
+          безбашенное<br>
+          путешествие с Пинк</h1>
+      </div>
+    </section>
+
+    <section class="challenge__forms-section forms-section">
+      <div class="forms-section__call-to-action-wrapper">
+        <p class="forms-section__call-to-action call-to-action">
+          Поделитесь своей историей и получите
+          шанс выиграть ценный приз — 1000
+          миль на вашу бонусную карту!
+          <span class="call-to-action__please-fill-form">Пожалуйста, заполните форму ниже:</span>
+        </p>
+      </div>
+
+      <form class="forms-section__form form" action="">
+        <fieldset class="form__personal-info personal-info">
+          <ul class="personal-info__qustions-list">
+            <li class="personal-info__qustions-item">
+              <label class="qustions-item__title title" for="personal-second-name">ФАМИЛИЯ:</label>
+              <p>
+                <input class="personal-info__text-input text-input" type="text" id="personal-second-name"
+                  name="second-name" placeholder="Укажите фамилию *">
+              </p>
+            </li>
+            <li class="personal-info__qustions-item">
+              <label class="qustions-item__title title" for="personal-first-name">ИМЯ:</label>
+              <p>
+                <input class="personal-info__text-input text-input" type="text" id="personal-first-name"
+                  name="second-name" placeholder="Введите ваше имя *">
+              </p>
+            </li>
+            <li class="personal-info__qustions-item">
+              <label class="qustions-item__title title" for="personal-fathers-name">ОТЧЕСТВО:</label>
+              <p>
+                <input class="personal-info__text-input text-input" type="text" id="personal-fathers-name"
+                  name="second-name" placeholder="Ну и отчество тоже">
+              </p>
+            </li>
+          </ul>
+        </fieldset>
+
+        <fieldset class="form__achievement-info achievement-info">
+          <p class="achievement-info__title title">Ваши безбашенные достижения в путешествии</p>
+          <ul class="achievement-info__qustions-list">
+            <li class="achievement-info__qustions-item">
+              <input type="checkbox" id="acheivement-shark-selfie" name="acheivement-shark-selfie" checked>
+              <label for="acheivement-shark-selfie">Сделал селфи с акулой</label>
+            </li>
+            <li class="achievement-info__qustions-item">
+              <input type="checkbox" id="acheivement-burn-out" name="acheivement-burn-out" checked>
+              <label for="acheivement-burn-out">Обгорел на пляже</label>
+            </li>
+            <li class="achievement-info__qustions-item">
+              <input type="checkbox" id="acheivement-see-chuckie" name="acheivement-see-chuckie">
+              <label for="acheivement-see-chuckie">Видел Чака Норриса</label>
+            </li>
+            <li class="achievement-info__qustions-item">
+              <input type="checkbox" id="acheivement-buy-souvenirs" name="acheivement-buy-souvenirs">
+              <label for="acheivement-buy-souvenirs">Накупил сувениров</label>
+            </li>
+            <li class="achievement-info__qustions-item">
+              <input type="checkbox" id="acheivement-hold-tower" name="acheivement-hold-tower" checked>
+              <label for="acheivement-hold-tower">Удержал башню</label>
+            </li>
+            <li class="achievement-info__qustions-item">
+              <input type="checkbox" id="acheivement-destroy-hotel" name="acheivement-destroy-hotel">
+              <label for="acheivement-destroy-hotel">Разгромил отель</label>
+            </li class="achievement-info__qustions-item">
+          </ul>
+        </fieldset>
+
+        <fieldset class="form__contact-info contact-info">
+          <p class="contact-info__fieldset-title title">контактная информация</p>
+          <ul class="contact-info__qustions-list">
+            <li class="contact-info__qustions-item">
+              <label class="contact-info__title title" for="phone-number">НОМЕР ТЕЛЕФОНА</label>
+              <p class="contact-info__text-input-phone-wrapper">
+                <input class="contact-info__text-input text-input" type="text" id="phone-number" name="phone-number"
+                  placeholder="Номер, пожалуйста">
+              </p>
+            </li>
+            <li class="contact-info__qustions-item">
+              <label class="contact-info__title title" for="e-mail">АДРЕС ПОЧТЫ</label>
+              <p class="contact-info__text-input-email-wrapper">
+                <input class="contact-info__text-input text-input" type="text" id="e-mail" name="e-mail"
+                  placeholder="Введите почту *">
+              </p>
+            </li>
+          </ul>
+        </fieldset>
+
+        <fieldset class="form__app-ver-info app-ver-info">
+          <p class="app-ver-info__title title">С каким приложением путешествовали?</p>
+          <ul class="app-ver-info__qustions-list">
+            <li class="app-ver-info__qustions-item">
+              <input type="radio" id="pink-for-ios" name="pink-os" checked>
+              <label for="pink-for-ios">Pink для iOS</label>
+            </li>
+            <li class="app-ver-info__qustions-item">
+              <input type="radio" id="pink-for-android" name="pink-os">
+              <label for="pink-for-android">Pink на Android</label>
+            </li>
+            <li class="app-ver-info__qustions-item">
+              <input type="radio" id="pink-for-window-phone" name="pink-os">
+              <label for="pink-for-window-phone">Windows Phone</label>
+            </li>
+          </ul>
+        </fieldset>
+
+        <fieldset class="form__feedback feedback">
+          <p class="feedback__title title">ОПИШИТЕ СВОИ ЭМОЦИИ</p>
+          <textarea class="feedback__text-input text-input" name="describe-emotions" id="describe-emotions" cols="30"
+            rows="10" placeholder="Можно прям в красках, не стесняясь в выражениях"></textarea>
+        </fieldset>
+
+        <div class="form__button-wrapper">
+          <button class="form__button">Отправить форму</button>
+          <p class="form__legend legend"><span class="legend__star">*</span> — обязательные поля</p>
+        </div>
+      </form>
+    </section>
+
+  </main>
+
+  <footer class="page-footer footer">
+    <div class="footer__wrapper">
+      <div class="footer__logo-wrapper">
+        <img src="img/logo_icons/pink-full-logo.svg" width="145" height="40" alt="Логотип PINK">
+      </div>
+      <div class="footer__social-links-wrapper">
+        <div class="social-link-border">
+          <a href="https://twitter.com">
+            <img src="img/logo_icons/twitter.svg" width="18" height="14" alt="Логотип Twitter">
+          </a>
+        </div>
+        <div class="social-link-border">
+          <a href="https://www.facebook.com">
+            <img src="img/logo_icons/facebook.svg" width="9" height="18" alt="Логотип Facebook">
+          </a>
+        </div>
+        <div class="social-link-border">
+          <a href="https://www.facebook.com">
+            <img src="img/logo_icons/youtube.svg" width="15" height="13" alt="Логотип Youtube">
+          </a>
+        </div>
+      </div>
+      <div class="footer__developer-wrapper">
+        <p class="footer__developer-name">Разработано</p>
+        <a href="">
+          <img src="img/logo_icons/html_academy.svg" width="27" height="34" alt="Логотип HTML Academy">
+        </a>
+      </div>
+    </div>
+  </footer>
+
+</body>
+
+</html>

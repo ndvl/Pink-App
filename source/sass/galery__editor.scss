@@ -1,0 +1,251 @@
+.editor {
+  padding-top: 18px;
+  width: 100%;
+  background-color: #F2F2F2;
+
+  @media (min-width: 660px) {
+    padding-top: 55px;
+    min-height: 511px;
+  }
+}
+
+.editor__wrapper {
+  display: flex;
+  flex-direction: column;
+  margin-left: auto;
+  margin-right: auto;
+
+  @media (min-width: 660px) {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+  }
+}
+
+.editor__preview {
+  width: 280px;
+  margin-left: auto;
+  margin-right: auto;
+
+  @media (min-width: 660px) {
+    width: 100%;
+    min-height: 400px;
+    display: flex;
+    justify-content: flex-end;
+    margin-right: 0;
+    margin-left: 0;
+    padding-right: 10px;
+
+    img {
+      width: 300px;
+    }
+  }
+}
+
+.editor__tools-wrapper {
+  padding-top: 37px;
+  margin-bottom: 40px;
+
+  @media (min-width: 660px) {
+    padding-top: 0;
+    margin-bottom: 0;
+  }
+}
+
+.editor__tools-list {
+  padding: 0;
+  margin: 0;
+  list-style: none;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 35px;
+  padding-right: 10px;
+  margin-bottom: 36px;
+
+  @media (min-width: 660px) {
+    flex-direction: column;
+    align-items: flex-start;
+    padding-top: 0px;
+    gap: 0px;
+    margin-bottom: 0;
+  }
+}
+
+.editor__tools-item {
+  box-sizing: content-box;
+
+  @media (min-width: 660px) {
+    margin-left: 37px;
+    height: 45px;
+    border-bottom: 1px solid rgba(40, 54, 69, 0.1);
+    padding-top: 26px;
+    width: 272px;
+    display: grid;
+    grid-template-columns: 24px max-content;
+    gap: 29px;
+
+    &:first-child {
+      padding-top: 10px;
+    }
+  }
+}
+
+.crop_icon {
+
+  @media (min-width: 660px) {
+  width: 22px;
+  height: 22px;
+  }
+}
+
+.fill_icon {
+
+  @media (min-width: 660px) {
+  width: 24px;
+  height: 22px;
+  }
+}
+
+.contrast_icon {
+
+  @media (min-width: 660px) {
+  width: 16px;
+  height: 16px;
+  }
+}
+
+.editor__tools-range {
+  display: none;
+
+  @media (min-width: 660px) {
+    display: flex;
+    width: 100%;
+    justify-content: flex-end;
+    padding-top: 9px;
+    }
+}
+
+.tools-range__line {
+  display: none;
+
+  @media (min-width: 660px) {
+    display: block;
+    position: relative;
+    width: 202px;
+    height: 2px;
+    background-color: #000000;
+    }
+}
+
+.tools-range__crop-point {
+  display: none;
+
+  @media (min-width: 660px) {
+    display: block;
+    position: absolute;
+    width: 14px;
+    height: 14px;
+    border: 2px solid #D22856;
+    background-color: #fff;
+    border-radius: 50%;
+    right: 29px;
+    transform: translateY(-40%);
+  }
+}
+
+.tools-range__fill-point {
+  display: none;
+
+  @media (min-width: 660px) {
+    display: block;
+    position: absolute;
+    width: 14px;
+    height: 14px;
+    border: 2px solid #D22856;
+    background-color: #fff;
+    border-radius: 50%;
+    right: 162px;
+    transform: translateY(-40%);
+  }
+}
+
+.tools-range__contrast-point {
+  display: none;
+
+  @media (min-width: 660px) {
+    display: block;
+    position: absolute;
+    width: 14px;
+    height: 14px;
+    border: 2px solid #D22856;
+    background-color: #fff;
+    border-radius: 50%;
+    right: 92px;
+    transform: translateY(-40%);
+  }
+}
+
+.editor__tools-range-mobile {
+  display: flex;
+  justify-content: center;
+  margin-bottom: 34px;
+
+  @media (min-width: 660px) {
+    display: none;
+  }
+}
+
+.tools-range-mobile__line {
+  position: relative;
+  width: 240px;
+  height: 2px;
+  background-color: #000000;
+}
+
+.tools-range-mobile__point {
+  position: absolute;
+  width: 14px;
+  height: 14px;
+  border: 2px solid #D22856;
+  background-color: #fff;
+  border-radius: 50%;
+  right: 33px;
+  transform: translateY(-40%);
+}
+
+.editor__button-wrapper {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 12px;
+  padding-top: 38px;
+  border-top: 1px solid rgba(40, 54, 69, 0.1);
+
+  @media (min-width: 660px) {
+    border-top: none;
+    padding-top: 67px;
+    gap: 24px;
+  }
+}
+
+.editor__button {
+  width: 260px;
+  height: 55px;
+  border-radius: 30px;
+  background: none;
+  font-family: OpenSansBold;
+  font-weight: 700;
+  font-size: 18px;
+  border: 3px solid;
+  cursor: pointer;
+}
+
+.editor__make-post-button {
+  color: #D22856;
+  border-color: #D22856;
+}
+
+.editor__cancel-button {
+  color: rgba(40, 54, 69, 0.1);
+  border-color: rgba(40, 54, 69, 0.1);
+}

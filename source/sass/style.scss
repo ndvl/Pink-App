@@ -1,1 +1,80 @@
-// Начните писать стили здесь
+@font-face {
+  font-family: OpenSans;
+  src:  url("../fonts/opensans.woff"),
+        url("../fonts/opensans.woff2");
+}
+
+@font-face {
+  font-family: OpenSansLight;
+  src:  url("../fonts/opensanslight.woff"),
+        url("../fonts/opensanslight.woff2");
+}
+
+@font-face {
+  font-family: OpenSansBold;
+  src:  url("../fonts/opensansbold.woff"),
+        url("../fonts/opensansbold.woff2");
+}
+
+* {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+.page-content {
+  padding: 0;
+  margin: 0;
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  max-width: 100vw;
+  margin-left: auto;
+  margin-right: auto;
+  font-family: OpenSans;
+  overflow-x: hidden;
+}
+
+.main {
+  background-color: #F2F2F2;
+}
+
+.visually-hidden {
+  position: absolute;
+  white-space: nowrap;
+  width: 1px;
+  height: 1px;
+  overflow: hidden;
+  border: 0;
+  padding: 0;
+  clip: rect(0 0 0 0);
+  clip-path: inset(50%);
+  margin: -1px;
+}
+
+@import "header";
+
+@import "welcome-section";
+
+@import "advantages-section";
+
+@import "review-section";
+
+@import "price-section";
+
+@import "contact-us-section";
+
+@import "footer";
+
+@import "page-content__main-title-section";
+
+@import "galery__pictures-section";
+
+@import "galery__editor";
+
+@import "challenge__forms-section";
