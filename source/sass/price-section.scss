@@ -223,6 +223,14 @@
   background-color: rgba(40, 54, 69, 0.3);
   border-radius: 50%;
   cursor: pointer;
+
+  &:hover {
+    background-color: rgba(40, 54, 69, 0.6);
+  }
+
+  &:active {
+    background-color: rgba(40, 54, 69, 0.1);
+  }
 }
 
 .pagination-item__point--current {

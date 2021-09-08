@@ -11,6 +11,11 @@
     min-height: 440px;
     padding-top: 177px;
   }
+
+  @media (min-width: 1200px) {
+    min-height: 395px;
+    padding-top: 170px;
+  }
 }
 
 .main-title-section__main-title-wrapper {
@@ -31,5 +36,10 @@
   @media (min-width: 660px) {
     font-size: 50px;
     line-height: 68px;
+  }
+
+  @media (min-width: 1200px) {
+    font-size: 50px;
+    width: 750px;
   }
 }

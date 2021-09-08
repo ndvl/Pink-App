@@ -2,10 +2,18 @@
   padding-top: 18px;
   width: 100%;
   background-color: #F2F2F2;
+  margin-bottom: 10px;
 
   @media (min-width: 660px) {
     padding-top: 55px;
     min-height: 511px;
+    margin-bottom: 0px;
+  }
+
+  @media (min-width: 1200px) {
+    width: 940px;
+    padding: 42px 60px 57px 80px;
+    margin-bottom: 33px;
   }
 }
 
@@ -18,6 +26,11 @@
   @media (min-width: 660px) {
     display: grid;
     grid-template-columns: 1fr 1fr;
+  }
+
+  @media (min-width: 1200px) {
+    display: grid;
+    grid-template-columns: 350px 1fr;
   }
 }
 
@@ -38,6 +51,11 @@
     img {
       width: 300px;
     }
+  }
+
+  @media (min-width: 1200px) {
+    justify-content: flex-start;
+    padding-top: 12px;
   }
 }
 
@@ -60,7 +78,7 @@
   align-items: center;
   gap: 35px;
   padding-right: 10px;
-  margin-bottom: 36px;
+  margin-bottom: 33px;
 
   @media (min-width: 660px) {
     flex-direction: column;
@@ -87,6 +105,20 @@
     &:first-child {
       padding-top: 10px;
     }
+
+    &:last-child {
+      @media (min-width: 1200px) {
+        border: none;
+      }
+    }
+  }
+
+  @media (min-width: 1200px) {
+    margin-left: 40px;
+    gap: 70px;
+    width: 410px;
+    padding-top: 15px;
+    padding-bottom: 12px;
   }
 }
 
@@ -95,7 +127,13 @@
   @media (min-width: 660px) {
   width: 22px;
   height: 22px;
+  fill: rgba(210, 40, 86, 1);
   }
+
+  @media (min-width: 1200px) {
+    width: 44px;
+    height: 44px;
+    }
 }
 
 .fill_icon {
@@ -103,7 +141,13 @@
   @media (min-width: 660px) {
   width: 24px;
   height: 22px;
+  fill: rgba(210, 40, 86, 1);
   }
+
+  @media (min-width: 1200px) {
+    width: 48px;
+    height: 43px;
+    }
 }
 
 .contrast_icon {
@@ -111,7 +155,14 @@
   @media (min-width: 660px) {
   width: 16px;
   height: 16px;
+  margin-left: 5px;
+  fill: rgba(210, 40, 86, 1);
   }
+
+  @media (min-width: 1200px) {
+    width: 32px;
+    height: 32px;
+    }
 }
 
 .editor__tools-range {
@@ -122,6 +173,10 @@
     width: 100%;
     justify-content: flex-end;
     padding-top: 9px;
+    }
+
+  @media (min-width: 1200px) {
+    padding-top: 19px;
     }
 }
 
@@ -135,6 +190,14 @@
     height: 2px;
     background-color: #000000;
     }
+
+    @media (min-width: 660px) {
+      display: block;
+      position: relative;
+      width: 288px;
+      height: 2px;
+      background-color: #000000;
+      }
 }
 
 .tools-range__crop-point {
@@ -213,6 +276,14 @@
   transform: translateY(-40%);
 }
 
+.tools-range__point {
+  cursor: pointer;
+
+  &:hover {
+    background-color: #D22856;
+  }
+}
+
 .editor__button-wrapper {
   display: flex;
   flex-direction: column;
@@ -226,10 +297,17 @@
     padding-top: 67px;
     gap: 24px;
   }
+
+  @media (min-width: 1200px) {
+    flex-direction: row;
+    padding-top: 145px;
+    margin-left: 40px;
+    gap: 43px;
+  }
 }
 
 .editor__button {
-  width: 260px;
+  width: 280px;
   height: 55px;
   border-radius: 30px;
   background: none;
@@ -238,14 +316,42 @@
   font-size: 18px;
   border: 3px solid;
   cursor: pointer;
+
+  @media (min-width: 600px) {
+    width: 260px;
+  }
+
+  @media (min-width: 1200px) {
+    width: 183px;
+  }
 }
 
 .editor__make-post-button {
   color: #D22856;
   border-color: #D22856;
+
+  &:hover {
+    background-color: #D22856;
+    color: #fff;
+  }
+
+  &:active {
+    color: rgba(255, 255, 255, 0.3);
+  }
 }
 
 .editor__cancel-button {
   color: rgba(40, 54, 69, 0.1);
   border-color: rgba(40, 54, 69, 0.1);
+
+  &:hover {
+    color: rgba(40, 54, 69, 0.3);
+    border-color: rgba(40, 54, 69, 0.3);
+  }
+
+  &:active {
+    color: rgba(255, 255, 255, 0.3);
+    background-color: rgba(40, 54, 69, 0.3);
+    border: none;
+  }
 }

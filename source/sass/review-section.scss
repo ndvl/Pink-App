@@ -27,6 +27,7 @@
   width: 280px;
   margin-left: auto;
   margin-right: auto;
+  position: relative;
 
   @media (min-width: 660px) {
     order: 0;
@@ -34,6 +35,10 @@
     margin-left: auto;
     margin-right: auto;
     margin-bottom: 35px;
+  }
+
+  @media (min-width: 660px) {
+    width: 700px;
   }
 }
 
@@ -62,6 +67,36 @@
       background-image: url(../img/elements/quotes.svg);
     }
   }
+}
+
+.review-section__slider-changing-button {
+  width: max-content;
+  height: max-content;
+  position: absolute;
+  display: none;
+  top: 30%;
+  cursor: pointer;
+  fill: rgba(40, 54, 69, 0.3);
+
+  &:hover {
+    fill: rgba(40, 54, 69, 0.6);
+  }
+
+  &:active {
+    fill: rgba(40, 54, 69, 0.1);
+  }
+
+  @media (min-width: 1200px) {
+    display: block;
+  }
+}
+
+.review-section__slider-prev-button {
+  left: -120px;
+}
+
+.review-section__slider-next-button {
+  right: -122px;
 }
 
 .review-section__name-wrapper {
@@ -128,6 +163,14 @@
   background-color: rgba(40, 54, 69, 0.3);
   border-radius: 50%;
   cursor: pointer;
+
+  &:hover {
+    background-color: rgba(40, 54, 69, 0.6);
+  }
+
+  &:active {
+    background-color: rgba(40, 54, 69, 0.1);
+  }
 }
 
 .pagination-item__point--current {

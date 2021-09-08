@@ -166,6 +166,15 @@
   font-size: 18px;
   line-height: 18px;
 
+  &:hover {
+    background-color: #fff;
+    color: #D22856;
+  }
+
+  &:active {
+    color: rgba(210, 40, 86, 0.3);
+  }
+
   @media (min-width: 660px) {
     width: 300px;
   }
