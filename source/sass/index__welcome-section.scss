@@ -1,0 +1,228 @@
+.welcome-section {
+  position: relative;
+  color: $basic-white;
+  width: 100%;
+  background-color: $dark-bg-blue;
+
+  @media (min-width: 660px) {
+    min-height: 720px;
+    background-image: url("../img/background-tablet.jpg");
+    background-repeat: no-repeat;
+    background-position: center 0;
+    background-size: cover;
+  }
+
+  @media (min-width: 1200px) {
+    background-image: url("../img/background-desktop.jpg");
+    background-size: cover;
+  }
+}
+
+.welcome-section__top-section {
+  position: relative;
+  background-image: url("../img/background-mobile.jpg");
+  background-repeat: no-repeat;
+  background-position: center 0;
+  background-size: cover;
+  min-height: 462px;
+  padding-top: 91px;
+
+  @media (min-width: 660px) {
+    position: static;
+    background-image: none;
+    min-height: max-content;
+    padding-top: 202px;
+  }
+
+  @media (min-width: 1200px) {
+    padding-top: 210px;
+  }
+}
+
+.top-section__slogan-wrapper {
+  text-align: center;
+
+  @media (min-width: 660px) {
+    width: 50%;
+    display: flex;
+    justify-content: flex-end;
+    padding-right: 45px;
+  }
+
+  @media (min-width: 1200px) {
+    padding-right: 205px;
+  }
+}
+
+.top-section__slogan {
+  margin: 0;
+  padding: 0;
+  font-family: "OpenSansLight", sans-serif;
+  font-size: 24px;
+  line-height: 28.8px;
+  font-weight: 300;
+  z-index: 2;
+
+  @media (min-width: 660px) {
+    width: 230px;
+    font-size: 40px;
+    line-height: 48px;
+  }
+
+  @media (min-width: 1200px) {
+    font-size: 50px;
+    line-height: 68px;
+  }
+}
+
+.top-section__image-wrapper {
+  position: absolute;
+  bottom: -5px;
+  z-index: 0;
+  left: 50%;
+  transform: translateX(-50%);
+
+  @media (min-width: 1200px) {
+    right: -305px;
+  }
+}
+
+.welcome-section__bottom-section {
+  min-height: 271px;
+  background-color: $dark-bg-blue;
+  padding-top: 28px;
+  padding-bottom: 26px;
+  z-index: 2;
+
+  @media (min-width: 660px) {
+    background: none;
+    display: flex;
+    justify-content: flex-end;
+    width: 50%;
+    padding-top: 30px;
+    padding-bottom: 112px;
+  }
+
+  @media (min-width: 1200px) {
+    background: none;
+    display: flex;
+    justify-content: flex-end;
+    width: 50%;
+    padding-bottom: 120px;
+    padding-top: 37px;
+  }
+}
+
+.bottom-section__wrapper {
+  z-index: 2;
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+
+  @media (min-width: 660px) {
+    margin-right: -5px;
+    width: 330px;
+  }
+
+  @media (min-width: 1200px) {
+    width: max-content;
+    margin-right: 170px;
+  }
+}
+
+.bottom-section__download-button-wrapper {
+  display: flex;
+  justify-content: center;
+  margin-bottom: 32px;
+  z-index: 2;
+  width: 100%;
+
+  @media (min-width: 660px) {
+    margin-bottom: 45px;
+  }
+
+  @media (min-width: 1200px) {
+    margin-bottom: 70px;
+  }
+}
+
+.bottom-section__download-button {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 280px;
+  height: 55px;
+  border: 3px solid $basic-white;
+  border-radius: 50px;
+  text-decoration: none;
+  color: $basic-white;
+  font-family: "OpenSansBold", sans-serif;
+  font-size: 18px;
+  line-height: 18px;
+
+  &:hover {
+    background-color: $basic-white;
+    color: $basic-red;
+  }
+
+  &:active {
+    color: $basic-red-03;
+  }
+
+  @media (min-width: 660px) {
+    width: 300px;
+  }
+
+  @media (min-width: 1200px) {
+    font-size: 21px;
+  }
+}
+
+.bottom-section__platforms-logo-wrapper {
+  display: flex;
+  justify-content: center;
+  margin-bottom: 16px;
+  z-index: 2;
+  width: 100%;
+
+  @media (min-width: 660px) {
+    margin-bottom: 29px;
+  }
+
+  @media (min-width: 1200px) {
+    margin-bottom: 45px;
+  }
+}
+
+.bottom-section__platforms-logo-list {
+  display: flex;
+  list-style: none;
+  align-items: center;
+  gap: 35px;
+  margin: 0;
+  padding: 0;
+}
+
+.bottom-section__availability-remark-wrapper {
+  display: flex;
+  justify-content: center;
+  width: 100%;
+  z-index: 2;
+}
+
+.bottom-section__availability-remark {
+  padding: 0;
+  margin: 0;
+  font-family: "OpenSansLight", sans-serif;
+  font-size: 14px;
+  line-height: 24px;
+  font-weight: 300;
+  text-align: center;
+  z-index: 2;
+
+  @media (min-width: 660px) {
+    width: 300px;
+    font-size: 18px;
+  }
+}

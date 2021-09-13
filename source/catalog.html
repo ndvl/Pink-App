@@ -23,16 +23,19 @@
     </div>
 
     <div class="header__nav-button nav-button">
-      <div class="nav-button__line first-line"></div>
-      <div class="nav-button__line second-line"></div>
-      <div class="nav-button__line third-line"></div>
+      <svg style="margin-left: auto; margin-right: auto;" width="50" height="24" viewBox="0 0 50 24" fill="none"
+        xmlns="http://www.w3.org/2000/svg">
+        <path
+          d="M1.13659 0.00020839C0.986512 -0.00251551 0.837358 0.0214885 0.698091 0.0707781C0.558823 0.120068 0.432317 0.193625 0.326173 0.28703C0.22003 0.380436 0.136442 0.49176 0.0804303 0.614315C0.024419 0.73687 -0.00285856 0.868124 0.000236809 1.00019V3.00016C0.000236809 3.26537 0.119959 3.51972 0.333067 3.70725C0.546174 3.89478 0.83521 4.00014 1.13659 4.00014H48.8634C49.0135 4.00286 49.1626 3.97886 49.3019 3.92957C49.4412 3.88028 49.5677 3.80672 49.6738 3.71332C49.78 3.61991 49.8636 3.50859 49.9196 3.38603C49.9756 3.26348 50.0029 3.13222 49.9998 3.00016V1.00019C49.9998 0.734979 49.88 0.48063 49.6669 0.293097C49.4538 0.105563 49.1648 0.00020839 48.8634 0.00020839H1.13659ZM1.13659 10C0.986512 9.99731 0.837358 10.0213 0.698091 10.0706C0.558823 10.1199 0.432317 10.1935 0.326173 10.2869C0.22003 10.3803 0.136442 10.4916 0.0804303 10.6141C0.024419 10.7367 -0.00285856 10.868 0.000236809 11V13C0.000236809 13.2652 0.119959 13.5195 0.333067 13.7071C0.546174 13.8946 0.83521 14 1.13659 14H48.8634C49.0135 14.0027 49.1626 13.9787 49.3019 13.9294C49.4412 13.8801 49.5677 13.8065 49.6738 13.7131C49.78 13.6197 49.8636 13.5084 49.9196 13.3859C49.9756 13.2633 50.0029 13.132 49.9998 13V11C49.9998 10.7348 49.88 10.4805 49.6669 10.2929C49.4538 10.1054 49.1648 10 48.8634 10H1.13659ZM1.13659 19.9999C0.986512 19.9971 0.837358 20.0211 0.698091 20.0704C0.558823 20.1197 0.432317 20.1933 0.326173 20.2867C0.22003 20.3801 0.136442 20.4914 0.0804303 20.614C0.024419 20.7365 -0.00285856 20.8678 0.000236809 20.9998V22.9998C0.000236809 23.265 0.119959 23.5194 0.333067 23.7069C0.546174 23.8944 0.83521 23.9998 1.13659 23.9998H48.8634C49.0135 24.0025 49.1626 23.9785 49.3019 23.9292C49.4412 23.8799 49.5677 23.8064 49.6738 23.713C49.78 23.6196 49.8636 23.5082 49.9196 23.3857C49.9756 23.2631 50.0029 23.1319 49.9998 22.9998V20.9998C49.9998 20.7346 49.88 20.4803 49.6669 20.2927C49.4538 20.1052 49.1648 19.9999 48.8634 19.9999H1.13659Z"
+          fill="white" />
+      </svg>
     </div>
 
-    <nav class="header__nav-wrapper">
+    <nav class="header__nav-wrapper header__nav-wrapper--hidden">
       <ul class="header__nav-list">
         <li class="header__nav-item"><a href="/index.html">главная</a></li>
         <li class="header__nav-item header__nav-item--active"><a href="">фотографии</a></li>
-        <li class="header__nav-item"><a href="/challenge.html">конкурс</a></li>
+        <li class="header__nav-item"><a href="/form.html">конкурс</a></li>
         <li class="header__nav-item"><a href="https://htmlacademy.ru/" target="_blank">HTML academy</a></li>
       </ul>
     </nav>
@@ -58,7 +61,15 @@
       <div class="pictures-section__exemple-wrapper">
         <figure class="pictures-section__exemple exemple">
           <p class="exemple__panorama-holder">
-            <img src="img/users_photo/mobile/user-photo-1.jpg" height="100%" alt="Панорама дня">
+            <picture>
+              <source media="(min-width: 1200px)"
+                srcset="img/users_photo/desktop/panorama-desktop.jpg 1x, img/users_photo/desktop/panorama-desktop@2x.jpg 2x">
+              <source media="(min-width: 660px)"
+                srcset="img/users_photo/tablet/panorama-tablet.png 1x, img/users_photo/tablet/panorama-tablet@2x.png 2x">
+              <img src="img/users_photo/mobile/user-photo-1.jpg"
+                srcset="img/users_photo/mobile/user-photo-1.jpg 1x, img/users_photo/mobile/user-photo-1@2x.jpg 2x"
+                height="137" alt="Панорама дня">
+            </picture>
           </p>
           <figcaption class="panorama-description">
             <div class="panorama-description__name-wrapper">
@@ -72,17 +83,21 @@
                 перископе, задавайте свои вопросы!
               </p>
             </div>
-            <p class="panorama-description__likes">Нравится: 215</p>
+            <p class="panorama-description__likes likes">Нравится: 215</p>
           </figcaption>
         </figure>
 
         <figure class="pictures-section__exemple exemple">
           <p class="exemple__photo-holder">
             <picture>
-              <source media="(min-width: 1200px)" srcset="img/users_photo/desktop/photo-1-desktop.jpg">
-              <source media="(min-width: 660px)" srcset="img/users_photo/tablet/photo-1-tablet.jpg">
-            <img src="img/users_photo/mobile/photo-1-mobile.jpg" height="100%" alt="Панорама дня">
-          </picture>
+              <source media="(min-width: 1200px)"
+                srcset="img/users_photo/desktop/photo-1-desktop.jpg 1x, img/users_photo/desktop/photo-1-desktop@2x.jpg 2x">
+              <source media="(min-width: 660px)"
+                srcset="img/users_photo/tablet/photo-1-tablet.jpg 1x, img/users_photo/tablet/photo-1-tablet@2x.jpg 2x">
+              <img src="img/users_photo/mobile/photo-1-mobile.jpg"
+                srcset="img/users_photo/mobile/photo-1-mobile.jpg 1x, img/users_photo/mobile/photo-1-mobile@2x.jpg 2x"
+                height="180" alt="Панорама дня">
+            </picture>
           </p>
           <figcaption class="exemple__description description">
             <div class="description__name-wrapper">
@@ -94,17 +109,21 @@
                 сегодня в руки к нам попал.
               </p>
             </div>
-            <p class="description__likes">Нравится: 356</p>
+            <p class="description__likes likes">Нравится: 356</p>
           </figcaption>
         </figure>
 
         <figure class="pictures-section__exemple exemple">
           <p class="exemple__photo-holder">
             <picture>
-              <source media="(min-width: 1200px)" srcset="img/users_photo/desktop/photo-2-desktop.jpg">
-              <source media="(min-width: 660px)" srcset="img/users_photo/tablet/photo-2-tablet.jpg">
-            <img src="img/users_photo/mobile/photo-2-mobile.jpg" height="100%" alt="Панорама дня">
-          </picture>
+              <source media="(min-width: 1200px)"
+                srcset="img/users_photo/desktop/photo-2-desktop.jpg 1x, img/users_photo/desktop/photo-2-desktop@2x.jpg 2x">
+              <source media="(min-width: 660px)"
+                srcset="img/users_photo/tablet/photo-2-tablet.jpg 1x, img/users_photo/tablet/photo-2-tablet@2x.jpg 2x">
+              <img src="img/users_photo/mobile/photo-2-mobile.jpg"
+                srcset="img/users_photo/mobile/photo-2-mobile.jpg 1x, img/users_photo/mobile/photo-2-mobile@2x.jpg 2x"
+                height="180" alt="Панорама дня">
+            </picture>
           </p>
           <figcaption class="exemple__description description">
             <div class="description__name-wrapper">
@@ -114,17 +133,21 @@
             <div class="description__text-wrapper">
               <p class="description__text">Соседи будут рады!</p>
             </div>
-            <p class="description__likes">Нравится: 666</p>
+            <p class="description__likes likes">Нравится: 666</p>
           </figcaption>
         </figure>
 
         <figure class="pictures-section__exemple exemple">
           <p class="exemple__photo-holder">
             <picture>
-              <source media="(min-width: 1200px)" srcset="img/users_photo/desktop/photo-3-desktop.jpg">
-              <source media="(min-width: 660px)" srcset="img/users_photo/tablet/photo-3-tablet.jpg">
-            <img src="img/users_photo/mobile/photo-3-tablet.jpg" height="100%" alt="Панорама дня">
-          </picture>
+              <source media="(min-width: 1200px)"
+                srcset="img/users_photo/desktop/photo-3-desktop.jpg 1x, img/users_photo/desktop/photo-3-desktop@2x.jpg 2x">
+              <source media="(min-width: 660px)"
+                srcset="img/users_photo/tablet/photo-3-tablet.jpg 1x, img/users_photo/tablet/photo-3-tablet@2x.jpg 2x">
+              <img src="img/users_photo/mobile/photo-3-tablet.jpg"
+                srcset="img/users_photo/mobile/photo-3-tablet.jpg 1x, img/users_photo/mobile/photo-3-tablet@2x.jpg 2x"
+                height="180" alt="Панорама дня">
+            </picture>
           </p>
           <figcaption class="exemple__description description">
             <div class="description__name-wrapper">
@@ -134,17 +157,21 @@
             <div class="description__text-wrapper">
               <p class="description__text">Здесь могла быть ваша цитата о высоком и вечном.</p>
             </div>
-            <p class="description__likes">Нравится: 215</p>
+            <p class="description__likes likes">Нравится: 215</p>
           </figcaption>
         </figure>
 
         <figure class="pictures-section__exemple exemple">
           <p class="exemple__photo-holder">
             <picture>
-              <source media="(min-width: 1200px)" srcset="img/users_photo/desktop/photo-4-desktop.jpg">
-              <source media="(min-width: 660px)" srcset="img/users_photo/tablet/photo-4-tablet.jpg">
-            <img src="img/users_photo/mobile/photo-4-tablet.jpg" height="100%" alt="Панорама дня">
-          </picture>
+              <source media="(min-width: 1200px)"
+                srcset="img/users_photo/desktop/photo-4-desktop.jpg 1x, img/users_photo/desktop/photo-4-desktop@2x.jpg 2x">
+              <source media="(min-width: 660px)"
+                srcset="img/users_photo/tablet/photo-4-tablet.jpg 1x, img/users_photo/tablet/photo-4-tablet@2x.jpg 2x">
+              <img src="img/users_photo/mobile/photo-4-tablet.jpg"
+                srcset="img/users_photo/mobile/photo-4-tablet.jpg 1x, img/users_photo/mobile/photo-4-tablet@2x.jpg 2x"
+                height="180" alt="Панорама дня">
+            </picture>
           </p>
           <figcaption class="exemple__description description">
             <div class="description__name-wrapper">
@@ -154,17 +181,21 @@
             <div class="description__text-wrapper">
               <p class="description__text">Самая кубанская в мире!</p>
             </div>
-            <p class="description__likes">Нравится: 4</p>
+            <p class="description__likes likes">Нравится: 4</p>
           </figcaption>
         </figure>
 
         <figure class="pictures-section__exemple exemple">
           <p class="exemple__photo-holder">
             <picture>
-              <source media="(min-width: 1200px)" srcset="img/users_photo/desktop/photo-5-desktop.jpg">
-              <source media="(min-width: 660px)" srcset="img/users_photo/tablet/photo-5-tablet.jpg">
-            <img src="img/users_photo/mobile/photo-5-tablet.jpg" height="100%" alt="Панорама дня">
-          </picture>
+              <source media="(min-width: 1200px)"
+                srcset="img/users_photo/desktop/photo-5-desktop.jpg 1x, img/users_photo/desktop/photo-5-desktop@2x.jpg 2x">
+              <source media="(min-width: 660px)"
+                srcset="img/users_photo/tablet/photo-5-tablet.jpg 1x, img/users_photo/tablet/photo-5-tablet@2x.jpg 2x">
+              <img src="img/users_photo/mobile/photo-5-tablet.jpg"
+                srcset="img/users_photo/mobile/photo-5-tablet.jpg 1x, img/users_photo/mobile/photo-5-tablet@2x.jpg 2x"
+                height="180" alt="Панорама дня">
+            </picture>
           </p>
           <figcaption class="exemple__description description">
             <div class="description__name-wrapper">
@@ -174,17 +205,21 @@
             <div class="description__text-wrapper">
               <p class="description__text">Где снег-то?</p>
             </div>
-            <p class="description__likes">Нравится: 150</p>
+            <p class="description__likes likes">Нравится: 150</p>
           </figcaption>
         </figure>
 
         <figure class="pictures-section__exemple exemple">
           <p class="exemple__photo-holder">
             <picture>
-              <source media="(min-width: 1200px)" srcset="img/users_photo/desktop/photo-6-desktop.jpg">
-              <source media="(min-width: 660px)" srcset="img/users_photo/tablet/photo-6-tablet.jpg">
-            <img src="img/users_photo/mobile/photo-6-tablet.jpg" height="100%" alt="Панорама дня">
-          </picture>
+              <source media="(min-width: 1200px)"
+                srcset="img/users_photo/desktop/photo-6-desktop.jpg 1x, img/users_photo/desktop/photo-6-desktop@2x.jpg 2x">
+              <source media="(min-width: 660px)"
+                srcset="img/users_photo/tablet/photo-6-tablet.jpg 1x, img/users_photo/tablet/photo-6-tablet@2x.jpg 2x">
+              <img src="img/users_photo/mobile/photo-6-tablet.jpg"
+                srcset="img/users_photo/mobile/photo-6-tablet.jpg 1x, img/users_photo/mobile/photo-6-tablet@2x.jpg 2x"
+                height="180" alt="Панорама дня">
+            </picture>
           </p>
           <figcaption class="exemple__description description">
             <div class="description__name-wrapper">
@@ -194,7 +229,7 @@
             <div class="description__text-wrapper">
               <p class="description__text">Всем GM и взаимные лайки!</p>
             </div>
-            <p class="description__likes">Нравится: 2560</p>
+            <p class="description__likes likes">Нравится: 2560</p>
           </figcaption>
         </figure>
       </div>
@@ -214,8 +249,9 @@
         </div>
         <div class="editor__tools-wrapper">
           <ul class="editor__tools-list">
-            <li class="editor__tools-item">
-              <svg class="crop_icon" width="22" height="22" viewBox="0 0 44 44" xmlns="http://www.w3.org/2000/svg">
+            <li class="editor__tools-item tools-item">
+              <svg class="crop-icon tools-item__icon tools-item__icon--mobile-active" width="22" height="22"
+                viewBox="0 0 44 44" xmlns="http://www.w3.org/2000/svg">
                 <g opacity="1">
                   <path
                     d="M32 28H36V12C36 10.9391 35.5786 9.92172 34.8284 9.17157C34.0783 8.42143 33.0609 8 32 8H16V12H32V28ZM12 32V0H8V8H0V12H8V32C8 33.0609 8.42143 34.0783 9.17157 34.8284C9.92172 35.5786 10.9391 36 12 36H32V44H36V36H44V32H12Z" />
@@ -227,8 +263,9 @@
                 </div>
               </div>
             </li>
-            <li class="editor__tools-item">
-              <svg class="fill_icon" width="48" height="43" viewBox="0 0 48 43" xmlns="http://www.w3.org/2000/svg">
+            <li class="editor__tools-item tools-item">
+              <svg class="fill-icon tools-item__icon" width="48" height="43" viewBox="0 0 48 43"
+                xmlns="http://www.w3.org/2000/svg">
                 <g opacity="1">
                   <path
                     d="M33.12 17.88L15.24 0L12.41 2.83L17.17 7.59L6.88 17.88C6.3182 18.4425 6.00264 19.205 6.00264 20C6.00264 20.795 6.3182 21.5575 6.88 22.12L17.88 33.12C18.4425 33.6818 19.205 33.9974 20 33.9974C20.795 33.9974 21.5575 33.6818 22.12 33.12L33.12 22.12C33.6818 21.5575 33.9974 20.795 33.9974 20C33.9974 19.205 33.6818 18.4425 33.12 17.88ZM10.41 20L20 10.42L29.59 20H10.41ZM38 23C38 23 34 27.33 34 30C34 31.0609 34.4214 32.0783 35.1716 32.8284C35.9217 33.5786 36.9391 34 38 34C39.0609 34 40.0783 33.5786 40.8284 32.8284C41.5786 32.0783 42 31.0609 42 30C42 27.33 38 23 38 23Z" />
@@ -241,8 +278,9 @@
                 </div>
               </div>
             </li>
-            <li class="editor__tools-item">
-              <svg class="contrast_icon" width="32" height="32" viewBox="0 0 32 32" xmlns="http://www.w3.org/2000/svg">
+            <li class="editor__tools-item tools-item">
+              <svg class="contrast-icon tools-item__icon" width="32" height="32" viewBox="0 0 32 32"
+                xmlns="http://www.w3.org/2000/svg">
                 <g opacity="1">
                   <path
                     d="M16 4C18.3734 4 20.6935 4.70379 22.6669 6.02236C24.6402 7.34094 26.1783 9.21509 27.0866 11.4078C27.9948 13.6005 28.2325 16.0133 27.7694 18.3411C27.3064 20.6689 26.1635 22.8071 24.4853 24.4853C22.8071 26.1635 20.6689 27.3064 18.3411 27.7694C16.0133 28.2324 13.6005 27.9948 11.4078 27.0866C9.21509 26.1783 7.34095 24.6402 6.02237 22.6668C4.70379 20.6935 4.00001 18.3734 4.00001 16C4.00001 12.8174 5.26429 9.76515 7.51473 7.51472C9.76516 5.26428 12.8174 4 16 4ZM16 0C12.8355 0 9.74207 0.938384 7.11088 2.69649C4.4797 4.45459 2.42894 6.95345 1.21793 9.87706C0.0069325 12.8007 -0.309921 16.0177 0.307443 19.1214C0.924806 22.2251 2.44866 25.0761 4.6863 27.3137C6.92394 29.5513 9.77487 31.0752 12.8786 31.6926C15.9823 32.3099 19.1993 31.9931 22.1229 30.7821C25.0466 29.5711 27.5454 27.5203 29.3035 24.8891C31.0616 22.2579 32 19.1645 32 16C32 11.7565 30.3143 7.68687 27.3137 4.68629C24.3131 1.68571 20.2435 0 16 0Z" />
@@ -260,7 +298,7 @@
 
           <div class="editor__tools-range-mobile tools-range-mobile">
             <div class="tools-range-mobile__line">
-              <div class="tools-range-mobile__point tools-range__point"></div>
+              <div class="tools-range-mobile__point tools-range-mobile__point"></div>
             </div>
           </div>
 
@@ -303,6 +341,9 @@
       </div>
     </div>
   </footer>
+
+  <script src="js/main.js"></script>
+
 </body>
 
 </html>

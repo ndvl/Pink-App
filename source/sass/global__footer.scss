@@ -1,0 +1,101 @@
+.footer__wrapper {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 100%;
+  padding-top: 30px;
+  margin-bottom: 40px;
+  margin-left: auto;
+  margin-right: auto;
+
+  @media (min-width: 660px) {
+    flex-direction: row;
+    width: 620px;
+    justify-content: space-between;
+    align-items: center;
+  }
+
+  @media (min-width: 1200px) {
+    padding-top: 55px;
+    width: 940px;
+    margin-bottom: 75px;
+  }
+}
+
+.footer__logo-wrapper {
+  margin-bottom: 38px;
+
+  @media (min-width: 660px) {
+    margin-bottom: 0;
+  }
+}
+
+.footer__social-links-wrapper {
+  display: flex;
+  justify-content: center;
+  gap: 12px;
+  margin-bottom: 40px;
+
+  @media (min-width: 660px) {
+    margin-bottom: 0;
+    padding-right: 15px;
+  }
+
+  @media (min-width: 1200px) {
+    gap: 9px;
+    padding: 12px 0 0 10px;
+  }
+}
+
+.social-link-border {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 50px;
+  height: 50px;
+  border-radius: 50%;
+  border: 3px solid $dark-blue-01;
+
+  &:hover {
+    border-color: $dark-blue;
+  }
+
+  &:active {
+    opacity: 0.3;
+  }
+}
+
+.footer__developer-wrapper {
+  display: flex;
+  gap: 15px;
+  justify-content: center;
+  align-items: center;
+
+  @media (min-width: 1200px) {
+    padding: 7px 0 0 0;
+  }
+
+  &:hover svg {
+    fill: $dark-blue;
+  }
+
+  &:active svg {
+    opacity: 0.3;
+  }
+
+  svg {
+    fill: $basic-red;
+  }
+}
+
+.footer__developer-name {
+  padding: 0;
+  margin: 0;
+  font-family: "OpenSans", sans-serif;
+  font-size: 14px;
+  line-height: 18px;
+
+  @media (min-width: 1200px) {
+    font-size: 18px;
+  }
+}

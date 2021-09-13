@@ -1,0 +1,76 @@
+.page-content__popup_sent {
+  width: 320px;
+  min-height: 380px;
+  padding-top: 44px;
+  position: fixed;
+  top: 200px;
+  background-color: $basic-white;
+  box-shadow: 0 10px 15px $box-shadow-color;
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  z-index: 1002;
+
+  @media (min-width: 660px) {
+    width: 460px;
+    min-height: 432px;
+  }
+
+  @media (min-width: 1200px) {
+    width: 780px;
+    min-height: 377px;
+  }
+}
+
+.popup-sent__text-wrapper {
+  display: flex;
+  flex-direction: column;
+  gap: 37px;
+  padding: 0 20px 40px 20px;
+
+  @media (min-width: 660px) {
+    padding: 0 65px 40px 65px;
+  }
+
+  @media (min-width: 1200px) {
+    padding: 0 192px 40px 192px;
+  }
+}
+
+.popup-sent__title {
+  padding: 0;
+  margin: 0;
+  font-family: "OpenSansBold", sans-serif;
+  font-weight: 700;
+  font-size: 18px;
+
+  @media (min-width: 660px) {
+    font-size: 30px;
+  }
+}
+
+.popup-sent__text {
+  padding: 0;
+  margin: 0;
+  font-family: "OpenSans", sans-serif;
+  font-size: 14px;
+  line-height: 24px;
+
+  @media (min-width: 660px) {
+    font-size: 18px;
+  }
+}
+
+.popup-sent__button-wrapper {
+  height: 163px;
+  width: 100%;
+  background-color: $light-grey;
+  padding-top: 52px;
+}
+
+.popup-sent__button {
+  @media (min-width: 1200px) {
+    width: 456px;
+  }
+}
