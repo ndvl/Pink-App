@@ -99,7 +99,6 @@ const clean = () => {
 
 
 const build = gulp.series(
-  clean,
   copyFonts,
   optimizeImages,
   gulp.parallel(
@@ -112,7 +111,6 @@ const build = gulp.series(
 exports.build = build;
 
 exports.default = gulp.series(
-  clean,
   copyFonts,
   optimizeImages,
   gulp.parallel(
