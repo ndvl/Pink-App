@@ -10,15 +10,23 @@
     background-repeat: no-repeat;
     background-position: center 0;
     background-size: cover;
+
+    @media (min-resolution: 144dpi), (min-resolution: 1.5dppx) {
+      background-image: url("../img/background-tablet@2x.jpg");
+    }
   }
 
   @media (min-width: 1200px) {
     background-image: url("../img/background-desktop.jpg");
     background-size: cover;
+
+    @media (min-resolution: 144dpi), (min-resolution: 1.5dppx) {
+      background-image: url("../img/background-desktop@2x.jpg");
+    }
   }
 }
 
-.welcome-section__top-section {
+.welcome-section__top {
   position: relative;
   background-image: url("../img/background-mobile.jpg");
   background-repeat: no-repeat;
@@ -26,6 +34,10 @@
   background-size: cover;
   min-height: 462px;
   padding-top: 91px;
+
+  @media (min-resolution: 144dpi), (min-resolution: 1.5dppx) {
+    background-image: url("../img/background-mobile@2x.jpg");
+  }
 
   @media (min-width: 660px) {
     position: static;
@@ -39,7 +51,7 @@
   }
 }
 
-.top-section__slogan-wrapper {
+.top__slogan-wrapper {
   text-align: center;
 
   @media (min-width: 660px) {
@@ -54,10 +66,10 @@
   }
 }
 
-.top-section__slogan {
+.top__slogan {
   margin: 0;
   padding: 0;
-  font-family: "OpenSansLight", sans-serif;
+  font-family: "OpenSansLight", "Arial", sans-serif;
   font-size: 24px;
   line-height: 28.8px;
   font-weight: 300;
@@ -75,7 +87,7 @@
   }
 }
 
-.top-section__image-wrapper {
+.top__image-wrapper {
   position: absolute;
   bottom: -5px;
   z-index: 0;
@@ -87,7 +99,7 @@
   }
 }
 
-.welcome-section__bottom-section {
+.welcome-section__bottom {
   min-height: 271px;
   background-color: $dark-bg-blue;
   padding-top: 28px;
@@ -113,7 +125,7 @@
   }
 }
 
-.bottom-section__wrapper {
+.bottom__wrapper {
   z-index: 2;
   width: 100%;
   display: flex;
@@ -131,7 +143,7 @@
   }
 }
 
-.bottom-section__download-button-wrapper {
+.bottom__download-button-wrapper {
   display: flex;
   justify-content: center;
   margin-bottom: 32px;
@@ -147,7 +159,7 @@
   }
 }
 
-.bottom-section__download-button {
+.bottom__download-button {
   display: flex;
   justify-content: center;
   align-items: center;
@@ -157,7 +169,7 @@
   border-radius: 50px;
   text-decoration: none;
   color: $basic-white;
-  font-family: "OpenSansBold", sans-serif;
+  font-family: "OpenSansBold", "Arial", sans-serif;
   font-size: 18px;
   line-height: 18px;
 
@@ -179,7 +191,7 @@
   }
 }
 
-.bottom-section__platforms-logo-wrapper {
+.bottom__platforms-logo-wrapper {
   display: flex;
   justify-content: center;
   margin-bottom: 16px;
@@ -195,7 +207,7 @@
   }
 }
 
-.bottom-section__platforms-logo-list {
+.bottom__platforms-logo-list {
   display: flex;
   list-style: none;
   align-items: center;
@@ -204,17 +216,17 @@
   padding: 0;
 }
 
-.bottom-section__availability-remark-wrapper {
+.bottom__availability-remark-wrapper {
   display: flex;
   justify-content: center;
   width: 100%;
   z-index: 2;
 }
 
-.bottom-section__availability-remark {
+.bottom__availability-remark {
   padding: 0;
   margin: 0;
-  font-family: "OpenSansLight", sans-serif;
+  font-family: "OpenSansLight", "Arial", sans-serif;
   font-size: 14px;
   line-height: 24px;
   font-weight: 300;

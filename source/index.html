@@ -6,6 +6,12 @@
   <meta name="viewport" content="width=device-width,initial-scale=1,maximum-scale=1,user-scalable=no" />
   <title>HTML Academy: Пинк</title>
   <link rel="stylesheet" href="css/style.min.css">
+  <link rel="preload" href="source/fonts/opensans.woff" as="font" type="font/woff">
+  <link rel="preload" href="source/fonts/opensans.woff2" as="font" type="font/woff2">
+  <link rel="preload" href="source/fonts/opensansbold.woff" as="font" type="font/woff">
+  <link rel="preload" href="source/fonts/opensansbold.woff2" as="font" type="font/woff2">
+  <link rel="preload" href="source/fonts/opensanslight.woff" as="font" type="font/woff">
+  <link rel="preload" href="source/fonts/opensanslight.woff2" as="font" type="font/woff2">
 </head>
 
 <body class="page">
@@ -13,7 +19,7 @@
   <header class="page__header header">
 
     <div class="header__logo-wrapper">
-      <a href="/index.html">
+      <a>
         <picture>
           <source media="(min-width: 1200px)" srcset="img/logo_icons/pink-full-logo-desktop.svg">
           <source media="(min-width: 660px)" srcset="img/logo_icons/pink-full-logo-tablet.svg">
@@ -46,14 +52,14 @@
 
     <section class="page-content__welcome-section welcome-section">
 
-      <div class="welcome-section__top-section top-section">
-        <div class="top-section__slogan-wrapper">
-          <p class="top-section__slogan">
+      <div class="welcome-section__top top">
+        <div class="top__slogan-wrapper">
+          <p class="top__slogan">
             Взгляните на жизнь<br>иначе!
           </p>
         </div>
 
-        <div class="top-section__image-wrapper">
+        <div class="top__image-wrapper">
           <picture>
             <source media="(min-width: 1200px)"
               srcset="img/hand-with-phone-desktop.png 1x, img/hand-with-phone-desktop2x.png 2x">
@@ -65,15 +71,15 @@
         </div>
       </div>
 
-      <div class="welcome-section__bottom-section bottom-section">
-        <div class="bottom-section__wrapper">
-          <div class="bottom-section__download-button-wrapper">
-            <a class="bottom-section__download-button" href="https://www.apple.com/app-store/">Скачать приложение</a>
+      <div class="welcome-section__bottom bottom">
+        <div class="bottom__wrapper">
+          <div class="bottom__download-button-wrapper">
+            <a class="bottom__download-button" href="https://www.apple.com/app-store/">Скачать приложение</a>
           </div>
 
-          <div class="bottom-section__platforms-logo-wrapper">
-            <ul class="bottom-section__platforms-logo-list">
-              <li class="bottom-section__platforms-logo-item">
+          <div class="bottom__platforms-logo-wrapper">
+            <ul class="bottom__platforms-logo-list">
+              <li class="bottom__platforms-logo-item">
                 <a href="https://www.apple.com/app-store/">
                   <svg width="47" height="56" viewBox="0 0 47 56" fill="none" xmlns="http://www.w3.org/2000/svg">
                     <path
@@ -82,7 +88,7 @@
                   </svg>
                 </a>
               </li>
-              <li class="bottom-section__platforms-logo-item">
+              <li class="bottom__platforms-logo-item">
                 <a href="https://play.google.com/store/apps">
                   <svg width="43" height="47" viewBox="0 0 43 47" fill="none" xmlns="http://www.w3.org/2000/svg">
                     <path
@@ -100,7 +106,7 @@
                   </svg>
                 </a>
               </li>
-              <li class="bottom-section__platforms-logo-item">
+              <li class="bottom__platforms-logo-item">
                 <a href="https://www.microsoft.com/ru-ru/store/apps/windows">
                   <svg width="44" height="41" viewBox="0 0 44 41" fill="none" xmlns="http://www.w3.org/2000/svg">
                     <path d="M20.908 19.5238H0V0H20.908V19.5238Z" fill="#F05423" />
@@ -112,8 +118,8 @@
               </li>
             </ul>
           </div>
-          <div class="bottom-section__availability-remark-wrapper">
-            <p class="bottom-section__availability-remark">
+          <div class="bottom__availability-remark-wrapper">
+            <p class="bottom__availability-remark">
               Доступно для iPhone, iPad, Android,<br>
               Windows Phone, OS X, Windows 8
             </p>
@@ -414,23 +420,23 @@
       <div class="footer__social-links-wrapper">
         <div class="social-link-border">
           <a href="https://twitter.com">
-            <img src="img/logo_icons/twitter.svg" width="18" height="14" alt="Логотип Twitter">
+            <img src="img/logo_icons/twitter.svg" width="18" height="14" aria-label="Логотип Twitter" alt="Логотип Twitter">
           </a>
         </div>
         <div class="social-link-border">
           <a href="https://www.facebook.com">
-            <img src="img/logo_icons/facebook.svg" width="9" height="18" alt="Логотип Facebook">
+            <img src="img/logo_icons/facebook.svg" width="9" height="18" aria-label="Логотип Facebook" alt="Логотип Facebook">
           </a>
         </div>
         <div class="social-link-border">
           <a href="https://www.facebook.com">
-            <img src="img/logo_icons/youtube.svg" width="15" height="13" alt="Логотип Youtube">
+            <img src="img/logo_icons/youtube.svg" width="15" height="13" aria-label="Логотип Youtube" alt="Логотип Youtube">
           </a>
         </div>
       </div>
       <div class="footer__developer-wrapper">
         <p class="footer__developer-name">Разработано</p>
-        <a href="">
+        <a href="https://htmlacademy.ru/intensive/adaptive">
           <svg width="27" height="34" viewBox="0 0 27 34" fill="none" xmlns="http://www.w3.org/2000/svg">
             <path
               d="M13.6426 0.0157537L13.5 0L0 1.40733V26.0129L13.5 34L27 26.0129V1.40733L13.6426 0.0157537ZM25.2344 25.0151L13.5 31.9573L1.76561 25.0151V14.9293L13.4507 21.8451L13.4701 23.0984L5.45351 18.3548L5.44295 19.5801L13.4894 24.3885L13.5088 25.675L5.46408 20.9174L5.45351 22.1427L13.5 26.9511L21.6239 22.1182V20.8929V16.909L25.2432 14.7595L25.2344 25.0151ZM25.2344 13.4519L22.0147 15.3319L20.5325 16.2071L13.4666 12.0201L13.456 13.2454L19.4957 16.818L19.4429 16.8495L19.3126 16.9247L18.4536 17.4166L13.4666 14.4689L13.456 15.6942L17.3921 18.0222L16.4591 18.6314L16.438 18.6436L13.4666 16.902L13.456 18.1273L15.4029 19.2615L13.4155 20.4483L1.7973 13.5762L13.4349 6.61831L25.2344 13.4519ZM25.2344 12.2266L13.4401 5.31075L1.76561 12.2196V2.9897L13.5 1.76442L25.2344 2.9897V12.2266Z" />

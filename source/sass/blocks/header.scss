@@ -127,7 +127,7 @@ $header_height_tablet: 110px;
 
   a {
     text-decoration: none;
-    font-family: "OpenSansBold", sans-serif;
+    font-family: "OpenSansBold", "Arial", sans-serif;
     text-transform: uppercase;
     color: $basic-white;
     line-height: 32px;
@@ -142,7 +142,7 @@ $header_height_tablet: 110px;
     }
 
     @media (min-width: 1200px) {
-      font-family: "OpenSans", sans-serif;
+      font-family: "OpenSans", "Arial", sans-serif;
       font-size: 18px;
       font-weight: 400;
       text-transform: capitalize;

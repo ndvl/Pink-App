@@ -29,7 +29,7 @@
 .forms-section__call-to-action {
   padding: 0;
   margin: 0;
-  font-family: "OpenSans", sans-serif;
+  font-family: "OpenSans", "Arial", sans-serif;
   font-weight: 400;
   font-size: 14px;
   line-height: 30px;
@@ -128,7 +128,7 @@
 }
 
 .title {
-  font-family: "OpenSans", sans-serif;
+  font-family: "OpenSans", "Arial", sans-serif;
   font-weight: 400;
   font-size: 14px;
   color: $basic-red;
@@ -150,7 +150,7 @@
   border-radius: 3px;
 
   &::placeholder {
-    font-family: "OpenSans", sans-serif;
+    font-family: "OpenSans", "Arial", sans-serif;
     font-weight: 400;
     color: $basic-black;
     font-size: 18px;
@@ -250,7 +250,7 @@
   }
 
   label {
-    font-family: "OpenSans", sans-serif;
+    font-family: "OpenSans", "Arial", sans-serif;
     font-weight: 400;
     font-size: 18px;
     position: relative;
@@ -520,7 +520,7 @@
   }
 
   label {
-    font-family: "OpenSans", sans-serif;
+    font-family: "OpenSans", "Arial", sans-serif;
     font-weight: 400;
     font-size: 18px;
     position: relative;
@@ -661,7 +661,7 @@
   background-color: $button-green;
   border: 2px solid $button-green;
   border-radius: 3px;
-  font-family: "OpenSansBold", sans-serif;
+  font-family: "OpenSansBold", "Arial", sans-serif;
   font-weight: 700;
   text-transform: uppercase;
   font-size: 18px;
@@ -688,7 +688,7 @@
 }
 
 .form__legend {
-  font-family: "OpenSans", sans-serif;
+  font-family: "OpenSans", "Arial", sans-serif;
   font-weight: 400;
   font-size: 14px;
   text-transform: uppercase;

@@ -7,14 +7,26 @@
   background-size: 140%;
   color: $basic-white;
 
+  @media (min-resolution: 144dpi), (min-resolution: 1.5dppx) {
+    background-image: url("../img/background-mobile@2x.jpg");
+  }
+
   @media (min-width: 660px) {
     min-height: 440px;
     padding-top: 177px;
+
+    @media (min-resolution: 144dpi), (min-resolution: 1.5dppx) {
+      background-image: url("../img/background-tablet@2x.jpg");
+    }
   }
 
   @media (min-width: 1200px) {
     min-height: 395px;
     padding-top: 170px;
+
+    @media (min-resolution: 144dpi), (min-resolution: 1.5dppx) {
+      background-image: url("../img/background-desktop@2x.jpg");
+    }
   }
 }
 
@@ -28,7 +40,7 @@
   width: 80%;
   margin-left: auto;
   margin-right: auto;
-  font-family: "OpenSansLight", sans-serif;
+  font-family: "OpenSansLight", "Arial", sans-serif;
   font-weight: 300;
   font-size: 24px;
   line-height: 33px;

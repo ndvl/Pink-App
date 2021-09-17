@@ -34,7 +34,7 @@
   p {
     margin: 0;
     padding: 0;
-    font-family: "OpenSansLight", sans-serif;
+    font-family: "OpenSansLight", "Arial", sans-serif;
     font-weight: 300;
     font-size: 24px;
     line-height: 29px;
@@ -245,7 +245,7 @@
 .advantages-item__title {
   margin: 0;
   padding: 0;
-  font-family: "OpenSansBold", sans-serif;
+  font-family: "OpenSansBold", "Arial", sans-serif;
   font-size: 18px;
   line-height: 24px;
 
@@ -263,7 +263,7 @@
 .advantages-item__description {
   margin: 0;
   padding: 0;
-  font-family: "OpenSans", sans-serif;
+  font-family: "OpenSans", "Arial", sans-serif;
   font-size: 14px;
   line-height: 24px;
   width: 280px;
@@ -274,7 +274,7 @@
   }
 }
 
-.about-research {
+.advantages-section__about-research {
   display: none;
   z-index: 1002;
   background-color: $basic-white;
@@ -370,7 +370,7 @@
   margin: 0;
   display: inline-block;
   width: 170px;
-  font-family: "OpenSansBold", sans-serif;
+  font-family: "OpenSansBold", "Arial", sans-serif;
   font-size: 30px;
   line-height: 36px;
 
@@ -382,7 +382,7 @@
 .about-research__description {
   margin: 0;
   padding: 0;
-  font-family: "OpenSans", sans-serif;
+  font-family: "OpenSans", "Arial", sans-serif;
   font-size: 14px;
   line-height: 24px;
 
@@ -395,7 +395,7 @@
 
 .about-research__link {
   color: $basic-red;
-  font-family: "OpenSans", sans-serif;
+  font-family: "OpenSans", "Arial", sans-serif;
   font-size: 14px;
   line-height: 24px;
 

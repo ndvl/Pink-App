@@ -55,6 +55,7 @@
   height: 50px;
   border-radius: 50%;
   border: 3px solid $dark-blue-01;
+  padding-top: 3px;
 
   &:hover {
     border-color: $dark-blue;
@@ -91,7 +92,7 @@
 .footer__developer-name {
   padding: 0;
   margin: 0;
-  font-family: "OpenSans", sans-serif;
+  font-family: "OpenSans", "Arial", sans-serif;
   font-size: 14px;
   line-height: 18px;
 
